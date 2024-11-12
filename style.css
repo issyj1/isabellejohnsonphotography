@@ -385,7 +385,7 @@ WHY NOT WORKING?*/
         }
 
         .slideshow-container, .container {
-          top: 2%;
+          top: 5%;
           z-index: -1;
           display: block;
           position: fixed;
