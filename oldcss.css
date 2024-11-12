@@ -1,0 +1,400 @@
+
+body {
+    color: grey;
+    font-family: "shango-regular-webfont.woff", "Gotham Rounded A", "Gotham Rounded B", "Gotham Rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #FAFAFA;
+  }
+  
+  main {
+    /*margin-left: 160px;*/
+    width: 90%;
+    max-width: 1080px;
+  }
+
+  
+  h1 {
+    font-size: 1.3em;
+    display: block;
+    font-family:  "Gotham Rounded A", "Gotham Rounded B", "Gotham Rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    display: block;
+    color: white;
+    font-weight: bold;
+    background-color: violet;
+    border-radius: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 150px;
+    margin-bottom: 5px;
+  }
+
+h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/*images
+
+
+.mySlides {
+    width: 400px;
+float: center;
+padding-left: 20%;
+}*/
+
+
+
+
+/*footer*/
+
+#footer {
+    bottom: 0;
+    color: rgb(0, 195, 255);
+    font-size: 0.7em;
+    bottom: 0;
+    padding-left: 3%;
+    position: fixed;
+    padding-bottom: 3%;
+}
+
+
+
+/*TEST FOR TREE LIST*/
+    /* Remove hyperlink lines */
+
+  
+#myUL {
+    margin-left: 3%;
+    padding: 0;
+    margin-top: 0%;    
+    margin-bottom: 0%;   
+    z-index: 4;
+  }
+/* Remove default bullets */
+
+ul, #myUL {
+    margin-left: 3%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0%;    
+    margin-top: 0%;    
+    z-index: 4;
+
+    }
+
+    ul,  {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        }
+
+    ul a {
+        text-decoration: none;
+        color: white;
+        float: left;
+    }
+
+li {
+
+        font-family:  "Gotham Rounded A", "Gotham Rounded B", "Gotham Rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        display: inline-block;
+        padding-bottom: 4px;
+        padding-top: 4px;
+        text-decoration: none;
+        color: white;
+        border-radius: 20px;
+        text-align: left;
+        padding-right: 10px;
+        padding-left: 10px;
+        background-color: lightgray;
+        margin-bottom: 5px;
+        width: max-content;
+
+}
+
+li a{
+    text-decoration: none;
+
+  }
+
+.nested {
+    display: none;
+
+  }
+  .nested li {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    background-color: violet;
+
+  }
+
+/* Style the caret/arrow */
+.caret {
+    cursor: pointer;
+    user-select: none; /* Prevent text selection */
+  }
+  
+  /* Create the caret/arrow with a unicode, and style it */
+  .caret::before {
+    content: "\25B6";
+    color: white;
+   /* display: none;  // do this if you don't want the space*/
+    margin-right: 5px;
+    
+  }
+  
+  /* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+  .caret-down::before {
+    transform: rotate(90deg);
+  }
+  
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+    display: block;
+  }
+
+.nested .about {
+    width: 90%;
+    padding-left: 10px;
+    margin-right: 450px;
+    padding-right: 550px;
+    padding-bottom: 18%;
+
+    background-color: rgb(250 250 250/ 50%);
+    color: black;
+    z-index: 999;
+    border-color: rgb(250 250 250/ 50%);
+  }
+
+
+/*galleries in section pages */
+
+  .img-gallery {
+    z-index: 3;
+    display: inline-block;
+    width: 700px;
+    margin-left: 40%;
+    position: absolute;
+    top: 25px;
+}
+    
+    .img-gallery img {
+       width: 600px;
+       padding-bottom: 3%;
+    }
+
+
+
+/* next click gallery */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 700px;
+  margin-left: 45%;
+  position: absolute;
+  top: 25px;
+
+
+}
+.container {
+    display: inline-block;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: grab;
+  position: absolute;
+  bottom: 0.3%;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+/* Next & previous buttons */
+.prev {
+    padding-right: 200px;
+    padding-top: 610px;
+    padding-left: 4px;
+    background-color:rgb(255, 217, 0 /50%);
+  }
+/* Position the "next button" to the right 
+WHY NOT WORKING?*/
+.next {
+    left: 30%;
+    padding-left: 200px;
+    padding-top: 610px;
+    padding-right: 4px;
+    background-color:rgba(255, 217, 0 /50%);
+
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    cursor: grab;
+    background-color:rgba(255, 217, 0 );
+    color:red;
+
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+/*media queries*/
+@media only screen and (max-width: 768px) {
+
+
+  .img-gallery {
+    z-index: 3;
+    display: absolute; 
+    top: 200px;
+    padding-right: 3%;
+    width: 100%;
+    margin: auto;
+    padding-left: 3%;
+    padding-bottom: 5%;
+    margin-right: 0;
+  }
+    .img-gallery img {
+       padding-bottom: 2%;
+       width: 100%;
+       display: absolute;
+       padding-right: 3%; 
+       margin: auto; 
+    }
+
+   
+        footer {
+            margin-top: 20px;
+            padding-top: 20px;
+            z-index: 4;
+            right: 0;
+            margin-right: 5%;
+        }
+
+                /*playing about*/
+
+        .slideshow-container, .container {
+            top: 0;
+            width: 150%;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 5;
+            z-index: -1;
+        }
+
+
+
+        .nested .about {
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 200px;
+            margin-right: 200px;
+            padding-bottom: 36%;
+            padding-top: 5%;
+            background-color: rgb(250 250 250/ 50%);
+            z-index: 999;
+        }
+    }
+
+
+        @media only screen and (max-width: 430px) {
+
+     h1 {
+        display: block;
+        font-size: 1.6em;
+        width: 50%;
+        padding-right: 30%;
+        /*margin: auto;  */ 
+        /*text-align: center;*/
+     }
+
+       li {
+            display: block;
+            /*margin: auto;  */ 
+            margin-top: 3px;
+        }
+
+
+        ul {
+            display: block;
+            /*margin: auto;  */ 
+        }
+        #footer {
+            display: block;
+            z-index: 999;
+            bottom: 0;
+        }
+
+
+
+
+
+  
+  /* Next & previous buttons */
+  .prev, .next {
+
+    bottom: 0.3%;
+    color: white;
+    font-size: 20px;
+
+  
+  }
+  
+  /* Next & previous buttons */
+  .prev {
+      padding: 10px;
+      background-color:rgb(255, 217, 0);
+    }
+  /* Position the "next button" to the right 
+  WHY NOT WORKING?*/
+  .next {
+      left: 20%;
+      padding: 10px;
+  } 
+
+
+
+.nested .about {
+    width: 90%;
+    padding-left: 10px;
+    margin-right: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    background-color: rgb(250 250 250/ 60%);
+    z-index: 999;
+    } 
+}
