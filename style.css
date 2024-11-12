@@ -154,6 +154,7 @@ li a{
   .caret::before {
     content: "\25B6";
     color: white;
+    display: none;
    /* display: none;  // do this if you don't want the space*/
     margin-right: 5px;
     
