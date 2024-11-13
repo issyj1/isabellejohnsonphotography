@@ -435,7 +435,9 @@ WHY NOT WORKING?*/
     background-color: rgb(250 250 250/ 70%);
     z-index: 999;
     } 
-
+:root {
+  overscroll-behavior: none;
+}
   }
 
 
