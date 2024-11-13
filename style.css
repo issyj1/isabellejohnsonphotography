@@ -348,7 +348,7 @@ ul, #myUL, li, .nested {
         font-size: 1.6em;
         width: 50%;
         padding-right: 50%;
-        margin-left: 2px;
+        margin-left: 7px;
 
         /*margin: auto;  */ 
         /*text-align: center;*/
@@ -367,8 +367,8 @@ ul, #myUL, li, .nested {
         ul, #myUL {
             display: block;
             z-index: 99;
-            margin-left: 2px;
-            padding-left: 2px;
+            margin-left: 0px;
+            padding-left: 7px;
 
             /*margin: auto;  */ 
         }
