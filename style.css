@@ -416,7 +416,7 @@ ul, #myUL, li, .nested {
 
 
 .nested #about {
-    width: 100%;
+    width: 40%;
     padding-left: 10px;
     margin-right: 50px;
     padding-right: 50px;
