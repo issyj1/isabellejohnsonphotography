@@ -425,8 +425,8 @@ ul, #myUL, li, .nested {
 
 
 
-.nested #about {
-    width: 20px;
+.nested .about {
+    width: auto;
     padding-left: 10px;
     padding-top: 10px;
     background-color: rgb(250 250 250/ 60%);
