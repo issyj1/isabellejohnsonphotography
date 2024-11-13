@@ -11,7 +11,35 @@ for (i = 0; i < toggler.length; i++) {
 
 /*TEST*/
 
-let slideIndex = 1;
+
+
+
+function showMenu() {
+  return;
+  var items = document.getElementsByClassName("fade-item");
+  for (let i = 0; i < items.length; ++i) {
+    fadeIn(items[i], i * 500)
+  }
+  function fadeIn (item, delay) {
+    setTimeout(() => {
+      item.classList.add('fadein')
+    }, delay)
+  }
+}
+
+var items = document.getElementsByClassName("fade-item");
+  for (let i = 0; i < items.length; ++i) {
+    fadeIn(items[i], i * 50)
+  }
+  function fadeIn (item, delay) {
+    setTimeout(() => {
+      item.classList.add('fadein')
+    }, delay)
+  }
+
+/* slideshow */
+
+  let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -30,31 +58,3 @@ function showSlides(n) {
  
   slides[slideIndex-1].style.display = "block";
 }
-
-function test3(){
-  document.getElementById("footer").innerHTML="Clicked !";
-}
-
-function showMenu() {
-  return;
-  var items = document.getElementsByClassName("fade-item");
-  for (let i = 0; i < items.length; ++i) {
-    fadeIn(items[i], i * 500)
-  }
-  function fadeIn (item, delay) {
-    setTimeout(() => {
-      item.classList.add('fadein')
-    }, delay)
-  }
-}
-
-var items = document.getElementsByClassName("fade-item");
-  for (let i = 0; i < items.length; ++i) {
-    fadeIn(items[i], i * 500)
-  }
-  function fadeIn (item, delay) {
-    setTimeout(() => {
-      item.classList.add('fadein')
-    }, delay)
-  }
-  
