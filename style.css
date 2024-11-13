@@ -36,6 +36,7 @@ body {
     width: 150px;
     margin-bottom: 5px;
     cursor: grab;
+    position: sticky;
   }
 
 h1 a {
@@ -45,19 +46,6 @@ h1 a {
 
 
 
-/*images
-
-
-.mySlides {
-    width: 400px;
-float: center;
-padding-left: 20%;
-}*/
-
-
-
-
-/*footer*/
 
 #footer {
     bottom: 0;
@@ -77,31 +65,25 @@ padding-left: 20%;
     /* Remove hyperlink lines */
 
   
-#myUL {
-  margin-left: 30px;
-  padding: 0;
-    margin-top: 0%;    
-    margin-bottom: 0%;   
-    z-index: 4;
-  }
+
+
 /* Remove default bullets */
 
-ul, #myUL {
-      margin-left: 30px;
-      list-style-type: none;
-    display: flex;
+ul, {
+  display: flex;
     flex-direction: column;
     margin-bottom: 0%;    
     margin-top: 0%;    
     z-index: 4;
-
     }
 
-    ul,  {
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        }
+    #myUL {
+        margin-bottom: 0%;    
+        margin-top: 0%;    
+        z-index: 4;
+        padding-left: 30px;
+    }
+
 
     ul a {
         text-decoration: none;
@@ -118,12 +100,12 @@ li {
         text-decoration: none;
         color: white;
         border-radius: 20px;
-        text-align: left;
         padding-right: 10px;
         padding-left: 10px;
         background-color: lightgray;
         margin-bottom: 5px;
         width: max-content;
+        list-style: none;
 
 }
 
@@ -142,6 +124,7 @@ li a{
     flex-direction: column;
     width: max-content;
     background-color:violet;
+    margin-left: 20px;
   }
 
 /* Style the caret/arrow */
@@ -171,13 +154,13 @@ li a{
   }
 
 .nested .about {
-    background-color: rgb(250 250 250/ 50%);
+    background-color: rgb(250 250 250/ 70%);
     color: black;
     z-index: 999;
     border-color: rgb(250 250 250/ 50%);
-    width: 60%;
+    width: 100%;
     padding-right: 30%;
-    padding-bottom: 30%;
+    padding-bottom: 15%;
     z-index: 3;
     padding-top: 5px;
     left: 0;
@@ -198,18 +181,22 @@ li a{
     border-right: 0px;
     top: 25px;
     display: inline-block;
+    z-index: -1;
+
   }
     
     .img-gallery img {
        width: 700px;
        padding-bottom: 5%;
+       z-index: -1;
+
     }
 
 /* next click gallery */
 
 /* Slideshow container */
 .slideshow-container {
-  
+  z-index: -1;
   width: 700px;
   margin-left: 35%;
   position: absolute;
@@ -279,7 +266,9 @@ WHY NOT WORKING?*/
 /*media queries*/
 @media only screen and (max-width: 768px) {
 
-
+ul, #myUL, li, .nested {
+  z-index: 999;
+}
   .img-gallery {
     z-index: 1;
     display: inline-block;
@@ -288,21 +277,27 @@ WHY NOT WORKING?*/
     padding-left: 3%;
     padding-bottom: 5%;
     margin-right: 0;
-    margin-top: 160px;
+    margin-top: 200px;
   }
     .img-gallery img {
        padding-bottom: 2%;
        width: 100%;
        padding-right: 3%; 
        margin: auto; 
+       z-index: -1;
+
     }
 
     #img-gallery-portrait {
       width: 100%;
+      z-index: -1;
+
     }
     
     #img-gallery-portrait img {
       width: 100%;
+      z-index: -1;
+
     }
     
    
@@ -352,15 +347,12 @@ WHY NOT WORKING?*/
         font-size: 1.6em;
         width: 50%;
         padding-right: 50%;
-         margin-top: 3%;
-         margin-left: 3%;
         /*margin: auto;  */ 
         /*text-align: center;*/
      }
 
        li {
             display: block;
-            z-index: 2;
             /*margin: auto;  */ 
             margin-top: 3px;
         }
@@ -368,7 +360,6 @@ WHY NOT WORKING?*/
 
         ul {
             display: block;
-            z-index: 2;
             /*margin: auto;  */ 
         }
         #footer {
@@ -376,6 +367,7 @@ WHY NOT WORKING?*/
             z-index: 999;
             bottom: 0px;
             left: 0;
+            padding-top: 200px;
         }
 
         html {
@@ -386,8 +378,10 @@ WHY NOT WORKING?*/
           margin-top: 45%;
   padding-bottom: 50px;
   background-color: #fafafa;
+              top: 22.5%;
         z-index: 1;
       }
+        
 
         .slideshow-container, .container {
           top: 5%;
@@ -413,41 +407,38 @@ WHY NOT WORKING?*/
   
   
 
-/*
+
       .mySlides fade {
         margin: 0;
       }
-    
-    
 
 
-*/
 
-  
 
-.nested .about {
+.nested #about {
     width: 100%;
     padding-left: 10px;
-    margin-right: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    margin-right: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
     padding-top: 10px;
-    background-color: rgb(250 250 250/ 70%);
+    background-color: rgb(250 250 250/ 60%);
     z-index: 999;
     } 
-:root {
-  overscroll-behavior: none;
-}
+
+    :root {
+      overscroll-behavior: none;
+    }
   }
 
 
 .fade-item {
-  transition: 1s all ease-in-out;
+  transition: 2s all ease-in-out;
   opacity: 0;
 }
 
 .fadein {
-  animation: fadeIn 0.4s 1;
+  animation: fadeIn 0.9s 1;
   animation-fill-mode: forwards;
 }
 
@@ -478,6 +469,11 @@ li {
     animation-delay: 0s * $i;
   }
 } 
+
+
+
+
+
 
 
 
