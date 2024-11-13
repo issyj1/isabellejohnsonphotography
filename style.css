@@ -161,7 +161,7 @@ li a{
     width: 100%;
     padding-right: 30%;
     padding-bottom: 15%;
-    z-index: 3;
+    z-index: 99;
     padding-top: 5px;
     left: 0;
   }
@@ -270,7 +270,6 @@ ul, #myUL, li, .nested {
   z-index: 999;
 }
   .img-gallery {
-    z-index: 1;
     display: inline-block;
     width: 100%;
     margin: auto;
@@ -278,6 +277,8 @@ ul, #myUL, li, .nested {
     padding-bottom: 5%;
     margin-right: 0;
     margin-top: 200px;
+    z-index: -1;
+
   }
     .img-gallery img {
        padding-bottom: 2%;
@@ -358,8 +359,9 @@ ul, #myUL, li, .nested {
         }
 
 
-        ul {
+        ul, #myUL {
             display: block;
+            z-index: 99;
             /*margin: auto;  */ 
         }
         #footer {
@@ -376,10 +378,10 @@ ul, #myUL, li, .nested {
 
         .img-gallery {
           margin-top: 45%;
+          z-index: -1;
   padding-bottom: 50px;
   background-color: #fafafa;
               top: 22.5%;
-        z-index: 1;
       }
         
 
@@ -416,7 +418,7 @@ ul, #myUL, li, .nested {
 
 
 .nested #about {
-    width: 40%;
+    width: 100%;
     padding-left: 10px;
     margin-right: 50px;
     padding-right: 50px;
@@ -469,11 +471,6 @@ li {
     animation-delay: 0s * $i;
   }
 } 
-
-
-
-
-
 
 
 
